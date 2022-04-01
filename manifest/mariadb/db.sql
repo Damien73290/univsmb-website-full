@@ -35,3 +35,6 @@ INSERT INTO `webiptables`.`nat_alias` (`id`, `name`, `ipAddress`, `port`) VALUES
 
 INSERT INTO `webiptables`.`nat_alias` (`id`, `name`, `ipAddress`, `port`) VALUES
 	(2, 'SSH WebServer2', '10.0.0.2', 22);
+
+INSERT INTO `webiptables`.`nat_filter` (`idNat`, `name`, `ipAddressSrc`, `portSrc`, `ipAddressDst`, `portDst`, `type`) VALUES
+	(2, 'SSH WebServer3', '10.0.0.2', 22, '17.29.8.12', 80, 'Source NAT');
